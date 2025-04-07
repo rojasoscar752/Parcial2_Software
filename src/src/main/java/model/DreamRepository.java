@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class DreamRepository {
     private Paciente paciente;
-    private ArrayList<String> listDreams;
+    private ArrayList<Dreams> listDreams;
 
     public DreamRepository(Paciente paciente) {
         this.paciente = paciente;
         this.listDreams = new ArrayList<>();
     }
 
-    public void registrarInformation(String dream) {
+    public void registrarInformation(Dreams dream) {
         listDreams.add(dream);
     }
 
@@ -23,7 +23,7 @@ public class DreamRepository {
     public String mostrarInformation() {
         StringBuilder sb = new StringBuilder();
         sb.append("Sueños de ").append(paciente.getNamePac()).append(":\n");
-        for (String dream : listDreams) {
+        for (Dreams dream : listDreams) {
             sb.append("- ").append(dream).append("\n");
         }
         return sb.toString();

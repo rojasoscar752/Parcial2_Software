@@ -4,6 +4,11 @@ public class Paciente {
     private String numDoc;
     private String namePac;
 
+    public Paciente(String numDoc,String namePac) {
+        this.namePac = namePac;
+        this.numDoc =  numDoc;
+    }
+
     public String getNumDoc() {
         return numDoc;
     }

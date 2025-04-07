@@ -6,5 +6,10 @@ public class SystemSettings {
 
 
     private SystemSettings(){};
-    public instance getInstance(); //aca deberia de ir SystemSetting en vez de instance
+    public SystemSettings getInstance(){
+        if (instance == null) {
+            instance = new SystemSettings();
+        }
+        return instance;
+    }
 }

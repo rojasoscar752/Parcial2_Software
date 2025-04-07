@@ -2,5 +2,5 @@ package model;
 
 public interface IDreamRepository {
 
-    void create(String nameRepo);
+    public void create(String nameRepo, String numDoc,String namePac);
 }
