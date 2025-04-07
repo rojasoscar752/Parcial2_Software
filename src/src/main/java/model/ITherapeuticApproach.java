@@ -1,9 +1,8 @@
 package model;
 
 public interface ITherapeuticApproach {
+
+    public TherapyApprouchFactory getApprouach (String typeApproach, Dreams dream);
     
-    public SymbolicAnalyzer getSymbolicAnalyzer();
-    public EmotionalAnalyzer getEmotionalAnalyzer();
-    public StadisticAnalyzer getStatisticAnalyzer();
-    public CognitiveAnalyzer getCognitiveAnalyzer();
+    
 }

@@ -1,30 +1,30 @@
 package model;
 
-public class TherapyApprouchFactory  implements ITherapeuticApproach{
+import java.util.ArrayList;
 
-    private SymbolicAnalyzer symbolic;
-    private EmotionalAnalyzer emotional;
-    private StadisticAnalyzer stadistics;
-    private CognitiveAnalyzer cognitive;
+public class TherapyApprouchFactory  implements ITherapeuticApproach{
+    private ArrayList <Analyzer> analyzerJungiano;
+    private ArrayList <Analyzer> analyzerConductual;
+
     @Override
-    public SymbolicAnalyzer getSymbolicAnalyzer() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSymbolicAnalyzer'");
+    public TherapyApprouchFactory getApprouach(String typeApproach, Dreams dream) {
+        Analyzer analyzerSpecific = new Analyzer();
+        if (typeApproach.equalsIgnoreCase("jungiano")) {
+            analyzerJungiano.add(analyzerSpecific.getSymbolicAnalyzer(dream));
+            analyzerJungiano.add(analyzerSpecific.getEmotionalAnalyzer(dream));
+        }else{
+            analyzerConductual.add(analyzerSpecific.getStatisticAnalyzer(dream));
+            analyzerConductual.add(analyzerSpecific.getCognitiveAnalyzer(dream));
+        }
+        return this;
     }
-    @Override
-    public EmotionalAnalyzer getEmotionalAnalyzer() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getEmotionalAnalyzer'");
+
+    public ArrayList<Analyzer> getAnalyzerConductual() {
+        return analyzerConductual;
     }
-    @Override
-    public StadisticAnalyzer getStatisticAnalyzer() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getStatisticAnalyzer'");
-    }
-    @Override
-    public CognitiveAnalyzer getCognitiveAnalyzer() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCognitiveAnalyzer'");
+
+    public ArrayList<Analyzer> getAnalyzerJungiano() {
+        return analyzerJungiano;
     }
 
 }

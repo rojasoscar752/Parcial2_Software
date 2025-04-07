@@ -2,13 +2,15 @@ package model;
 
 public class Dreams implements ICloneDream{
 
+    private int idDream;
     private double duracion;
     private String intensidadEmocinal;
     private String claridadVisual;
     private String patrones;
     private String narrative;
 
-    public Dreams(double duracion, String intensidadEmocional, String claridadVisual, String patrones,String narrative) {
+    public Dreams(int idDream, double duracion, String intensidadEmocional, String claridadVisual, String patrones,String narrative) {
+        this.idDream = idDream;
         this.duracion = duracion;
         this.intensidadEmocinal = intensidadEmocional;
         this.claridadVisual = claridadVisual;
@@ -16,6 +18,9 @@ public class Dreams implements ICloneDream{
         this.narrative = narrative;
     }
 
+    public int getIdDream() {
+        return idDream;
+    }
     public String getClaridadVisual() {
         return claridadVisual;
     }
@@ -30,6 +35,9 @@ public class Dreams implements ICloneDream{
     }
     public String getPatrones() {
         return patrones;
+    }
+    public void setIdDream(int idDream) {
+        this.idDream = idDream;
     }
     public void setClaridadVisual(String claridadVisual) {
         this.claridadVisual = claridadVisual;
