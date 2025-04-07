@@ -1,5 +1,5 @@
 package model;
 
-public class JungianoApprouch {
+public class JungianoApprouch extends TherapyApprouchFactory{
 
 }

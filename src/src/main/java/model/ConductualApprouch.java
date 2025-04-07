@@ -1,5 +1,5 @@
 package model;
 
-public class ConductualApprouch {
+public class ConductualApprouch  extends TherapyApprouchFactory{
 
 }

@@ -6,20 +6,53 @@ public class Dreams implements ICloneDream{
     private String intensidadEmocinal;
     private String claridadVisual;
     private String patrones;
+    private String narrative;
 
-    public Dreams(double duracion, String intensidadEmocional, String claridadVisual, String patrones) {
+    public Dreams(double duracion, String intensidadEmocional, String claridadVisual, String patrones,String narrative) {
         this.duracion = duracion;
         this.intensidadEmocinal = intensidadEmocional;
         this.claridadVisual = claridadVisual;
         this.patrones = patrones;
+        this.narrative = narrative;
+    }
+
+    public String getClaridadVisual() {
+        return claridadVisual;
+    }
+    public double getDuracion() {
+        return duracion;
+    }
+    public String getIntensidadEmocinal() {
+        return intensidadEmocinal;
+    }
+    public String getNarrative() {
+        return narrative;
+    }
+    public String getPatrones() {
+        return patrones;
+    }
+    public void setClaridadVisual(String claridadVisual) {
+        this.claridadVisual = claridadVisual;
+    }
+    public void setDuracion(double duracion) {
+        this.duracion = duracion;
+    }
+    public void setIntensidadEmocinal(String intensidadEmocinal) {
+        this.intensidadEmocinal = intensidadEmocinal;
+    }
+    public void setNarrative(String narrative) {
+        this.narrative = narrative;
+    }
+    public void setPatrones(String patrones) {
+        this.patrones = patrones;
     }
     @Override
-    public Dreams cloneDream() {
+    public Dreams clone() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'cloneDream'");
     }
     @Override
-    public Dreams resetDream() {
+    public Dreams reset() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'resetDream'");
     }
