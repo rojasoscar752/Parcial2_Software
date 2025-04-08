@@ -33,6 +33,11 @@ public class StandartReportBuilder implements IbuilderReport {
        
         return this.standarReport;
     }
+    @Override
+    public void writeIdream(int  idream) {
+       this.standarReport.setIdDream(idream);
+    }
+   
 
  
     

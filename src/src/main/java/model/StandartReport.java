@@ -1,6 +1,8 @@
 package model;
 
 public class StandartReport {
+    private int idDream;
+  
     private String textualAnalyzer;
     private String symbolicAnalyzer;
     private String interpretationGrafichs;
@@ -20,6 +22,10 @@ public class StandartReport {
     public void setEmocionalAnalyzer(String emocionalAnalyzer) {
         this.emocionalAnalyzer = emocionalAnalyzer;
     }
+    public void setIdDream(int idDream) {
+        this.idDream = idDream;
+    }
+  
 
    
 

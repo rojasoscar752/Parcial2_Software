@@ -44,6 +44,12 @@ public class PersonalizedReportBuilder implements IbuilderReport {
         
     }
 
+    @Override
+    public void writeIdream(int idream) {
+        this.personalizedReport.setIdDream(idream);
+      
+    }
+
  
     
 }

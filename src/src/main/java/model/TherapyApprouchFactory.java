@@ -5,6 +5,11 @@ import java.util.ArrayList;
 public class TherapyApprouchFactory  implements ITherapeuticApproach{
     private ArrayList <Analyzer> analyzerJungiano;
     private ArrayList <Analyzer> analyzerConductual;
+        
+    public TherapyApprouchFactory() {
+        this.analyzerJungiano = new ArrayList<>();
+        this.analyzerConductual = new ArrayList<>();
+    }
 
     @Override
     public TherapyApprouchFactory getApprouach(String typeApproach, Dreams dream) {
