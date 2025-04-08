@@ -18,8 +18,9 @@ public class TherapyApprouchFactory  implements ITherapeuticApproach{
             analyzerJungiano.add(analyzerSpecific.getSymbolicAnalyzer(dream));
             analyzerJungiano.add(analyzerSpecific.getEmotionalAnalyzer(dream));
         }else{
-            analyzerConductual.add(analyzerSpecific.getStatisticAnalyzer(dream));
             analyzerConductual.add(analyzerSpecific.getCognitiveAnalyzer(dream));
+            analyzerConductual.add(analyzerSpecific.getStatisticAnalyzer(dream));
+            
         }
         return this;
     }

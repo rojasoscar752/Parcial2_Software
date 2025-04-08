@@ -15,5 +15,8 @@ public class PersonalizedReport {
         this.idDream = idDream;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Analisis especifico: " + analyzerSpecific + ", realizado al sueño #: " + idDream;
+    }
 }

@@ -4,14 +4,13 @@ import javax.swing.JOptionPane;
 
 public class IoManager {
 	public int readMenu() {
-		String menu="------Sistema de Registro y Análisis de Sueños Lúcidos------\n"+ 
-				"1. Registrar sueño \n"+
-				"2. Aplicar analisis a sueño \n"+
-				"3. Generar informe del sueño analizado\n"+
-				"4. Experimentar a partir de tecnicas un sueño \n"+
-				"5. Trabajar con múltiples sesiones activas\n"+
-				"6. Seleccionar enfoque terapeutico a utilizar\n"+
-				"7. Salir\n" ;
+		String menu="------Sistema de Registro y Analisis de Sueños Lucidos------\n"+ 
+				"1. Registrar paciente \n"+
+				"2. Registrar sueño \n"+
+				"3. Seleccionar enfoque terapeutico a utilizar\n"+
+				"4. Generar informe del sueño analizado\n"+
+				"5. Clonar sueño \n"+	
+				"6. Salir\n" ;
 		return this.readGraphicInt(menu);
 	}
 	public void showGraphicMessage(String message) {

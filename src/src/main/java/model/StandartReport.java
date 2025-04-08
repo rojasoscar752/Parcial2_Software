@@ -2,7 +2,6 @@ package model;
 
 public class StandartReport {
     private int idDream;
-  
     private String textualAnalyzer;
     private String symbolicAnalyzer;
     private String interpretationGrafichs;
@@ -25,10 +24,10 @@ public class StandartReport {
     public void setIdDream(int idDream) {
         this.idDream = idDream;
     }
-  
-
-   
-
-
-    
+    @Override
+    public String toString() {
+        return "id sueño: " + idDream + ", analizador simbolico: "
+                + symbolicAnalyzer + ", analizador emociomal: "
+                + emocionalAnalyzer;
+    } 
 }

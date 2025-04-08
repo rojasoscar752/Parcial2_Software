@@ -1,6 +1,6 @@
 package model;
 
-public class Dreams {
+public class Dreams implements ICloneDream<Dreams>{
 
     private int idDream;
     private double duracion;
@@ -54,9 +54,16 @@ public class Dreams {
     public void setPatrones(String patrones) {
         this.patrones = patrones;
     }
+
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        return "id sueño " + idDream + ", duracion=" + duracion + ", intensidadEmocinal=" + intensidadEmocinal
+                + ", claridadVisual=" + claridadVisual + ", patrones=" + patrones + ", narrative=" + narrative;
     }
+
+    @Override
+    public Dreams clone() {
+        return new Dreams(this.idDream,this.duracion,this.intensidadEmocinal,this.claridadVisual,this.patrones,this.narrative);
+    }
+    
 }
