@@ -1,6 +1,5 @@
 package model;
 
-public interface ICloneDream<T extends ICloneDream> extends Cloneable{
-    public T clone();
-    public T reset();
+public interface ICloneDream{
+    public ICloneDream cloneDream(String uId,int dreamId);
 }

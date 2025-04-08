@@ -1,6 +1,6 @@
 package model;
 
-public class Dreams implements ICloneDream{
+public class Dreams {
 
     private int idDream;
     private double duracion;
@@ -53,16 +53,6 @@ public class Dreams implements ICloneDream{
     }
     public void setPatrones(String patrones) {
         this.patrones = patrones;
-    }
-    @Override
-    public Dreams clone() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'cloneDream'");
-    }
-    @Override
-    public Dreams reset() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'resetDream'");
     }
     @Override
     public String toString() {

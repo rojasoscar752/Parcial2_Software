@@ -92,7 +92,7 @@ public App() {
     }
 //metodo de leonardo pa sacar un sueño de un paciente
     //recibe el numero de documento del paciente y el id del sueño
-    private Dreams getDream(String numDocP, int idDream){
+    public Dreams getDream(String numDocP, int idDream){
         DreamRepository dreamRepository = getDreamRepository(numDocP);
         if (dreamRepository != null) {
             for (Dreams dream : dreamRepository.getListDreams()) {
