@@ -11,8 +11,17 @@ public class DreamRepository {
         this.listDreams = new ArrayList<>();
     }
 
+
     public void registrarInformation(Dreams dream) {
         listDreams.add(dream);
+    }
+    public Dreams getDream(int idDream) {
+        for (Dreams dream : listDreams) {
+            if (dream.getIdDream() == idDream) {
+                return dream;
+            }
+        }
+        return null; 
     }
 
     public String traerInformacion() {
@@ -28,4 +37,15 @@ public class DreamRepository {
         }
         return sb.toString();
     }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+
+    public ArrayList<Dreams> getListDreams() {
+        return listDreams;
+    }
+    
+    
 }
