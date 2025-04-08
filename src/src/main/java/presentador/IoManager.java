@@ -1,4 +1,4 @@
-package model;
+package presentador;
 
 import javax.swing.JOptionPane;
 
